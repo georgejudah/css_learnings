@@ -6,6 +6,19 @@
 # Properties worth to remember
 # Pseudo Classes and Elements
 
+# disply property:
+1. Block-level elements are rendered as a block and hence take up all the available horizontal space. You can set margin-top and margin-bottom and two block-level elements will render in two different lines. example - div,section, nav, h1 and h2
+2. Inline elements on the other hand only take up the space they require to fit their content in. examples are span, anchor tag and img
+inline elements such as anchor list and so on do not have the same property as block level elements(example - don't have padding for themselves).
+To change this property, you can make use of the display property. using box-inline will help them to behave like block level
+and at the same time sit next to each other like inline elements do. Similarly, None will hide the element and have other elements
+occpy it's space like it is not present. An alternative is :hidden, which will hide the element and will not let the space
+get occupied by another element.
+
+# Pseudo Classes
+Pseudo Classes define a class for a special state of an element -> state
+Pseudo Elements allows us to define a style of a specific part of an element. -> part
+
 
 -- Best practices
 1. It's good to use margin-top or bottom for handling Margin collapsing(when 2 adjacent elements
@@ -14,3 +27,13 @@ share one margin even though each element has it's own one, the bigger element w
 2. Please use comments
 
 3. Use shorthand to simplify things where necessary.
+
+4. Width takes complete width of the parent container, but in case of height - it can only take the available
+space provided by the parent container(calculated dynamically by the content it holds). If we give explicit height
+for the parent, then the percentage for child will be calculated based on that.
+Padding, border in not a part of height and width. box-sizing: border box is reallt useful(now using this, margin
+and padding will be included in the height and width calculation accordingly).
+Sometimes it is better to use * universal selector as border box for inheritance. It will not work on body
+as it is a section and will be overwritten by defaults in the browser.
+
+5. Create classes generously, especially for elements which could be duplicated for multiple contents.
