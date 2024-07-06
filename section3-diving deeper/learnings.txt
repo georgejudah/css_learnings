@@ -1,0 +1,16 @@
+# box model
+-- every html element is interpeted as a block
+-- block level elements take the complete width by default
+# Height and width
+# The display property
+# Properties worth to remember
+# Pseudo Classes and Elements
+
+
+-- Best practices
+1. It's good to use margin-top or bottom for handling Margin collapsing(when 2 adjacent elements
+share one margin even though each element has it's own one, the bigger element wins). -https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+
+2. Please use comments
+
+3. Use shorthand to simplify things where necessary.
