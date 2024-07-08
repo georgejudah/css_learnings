@@ -20,6 +20,16 @@ Pseudo Classes define a class for a special state of an element -> state
 Pseudo Elements allows us to define a style of a specific part of an element. -> part
 
 
+-- properties worth remembering
+color:
+background-color:
+display:
+padding:
+border:
+margin:
+width:
+height:
+
 -- Best practices
 1. It's good to use margin-top or bottom for handling Margin collapsing(when 2 adjacent elements
 share one margin even though each element has it's own one, the bigger element wins). -https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
@@ -37,3 +47,9 @@ Sometimes it is better to use * universal selector as border box for inheritance
 as it is a section and will be overwritten by defaults in the browser.
 
 5. Create classes generously, especially for elements which could be duplicated for multiple contents.
+
+6. Make sure to group the rules wherever possible using , in between. For example, 1 class selector having pseudo classes having the same prop can be grouped.
+
+7. If required, feel free to use multiple classes for a single element.
+
+8. Follow naming conventions - bem specs.
