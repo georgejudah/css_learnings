@@ -4,7 +4,7 @@
 # Height and width
 # The display property
 # Properties worth to remember
-# Pseudo Classes and Elements
+# Pseudo Classes and Elements and :not(use postive cases wherever necessary)
 
 # disply property:
 1. Block-level elements are rendered as a block and hence take up all the available horizontal space. You can set margin-top and margin-bottom and two block-level elements will render in two different lines. example - div,section, nav, h1 and h2
@@ -12,7 +12,7 @@
 inline elements such as anchor list and so on do not have the same property as block level elements(example - don't have padding for themselves).
 To change this property, you can make use of the display property. using box-inline will help them to behave like block level
 and at the same time sit next to each other like inline elements do. Similarly, None will hide the element and have other elements
-occpy it's space like it is not present. An alternative is :hidden, which will hide the element and will not let the space
+occpy it's space like it is not present. An alternative is using visibility:hidden, which will hide the element and will not let the space
 get occupied by another element.
 
 # Pseudo Classes
@@ -29,6 +29,13 @@ border:
 margin:
 width:
 height:
+
+
+Class selectors vs id selectos:
+Re-usable
+allow you to "mark" things for styling only.
+Only used one per page - id selector
+ID also got non-css meaning(eg. on page link) which is necessarily not required
 
 -- Best practices
 1. It's good to use margin-top or bottom for handling Margin collapsing(when 2 adjacent elements
@@ -53,3 +60,7 @@ as it is a section and will be overwritten by defaults in the browser.
 7. If required, feel free to use multiple classes for a single element.
 
 8. Follow naming conventions - bem specs.
+
+9. Aim to use Class instead of IDs.
+
+10. Avoid using !important, don't use it. Only use it for edge cases, temporarily having to change the syle

@@ -1,0 +1,26 @@
+.box-div {
+    padding: 10px 5px 15px 20px;
+    margin: 5px 6px 7px 8px;
+    background-color: aqua;
+    border: 2px solid red;
+    color: white;
+    display: inline-block;
+
+}
+
+.box-enhanced{
+   height: 300px; 
+   width: 50%;
+   /* display:None; */
+   /* visibility: hidden; */
+}
+
+.box-enhanced-new {
+    width: 250px;
+}
+
+.box-div:last-child:hover, .box-div:last-child:active {
+ background-color: black;
+ color: aqua;
+
+}
