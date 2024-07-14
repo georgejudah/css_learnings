@@ -1,11 +1,3 @@
-* {
- box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
 #product-overview {
     /* background: #ff1b68; */
     background: url("freedom.jpg");
@@ -16,6 +8,7 @@ body {
 
 .section-title {
     color: #2ddf5c;
+    text-align: center;
 }
 
 #product-overview h1 {
@@ -48,71 +41,92 @@ body {
     border-radius: 8px;
 }
 
+.plan__title {
+    color: #0e4f1f;
+}
+
+.plan__price {
+    color: #858585;
+}
+
+.plan--highlighted .plan__title {
+    color: white;
+}
+
+.plan--highlighted .plan__price {
+    color: #0e4f1f;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.plan__feature {
+    margin: 8px 0;
+}
+
+.button {
+    background-color: #0e4f1f;
+    color: white;
+    /* inherit to use font family we used instead of default from browser */
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.button:hover, .button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
+}
+
+#key-features {
+    background: #ff1b68;
+    padding: 16px;
+    margin-top: 80px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
+.key-features__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.key-feature {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
-
-.main-header {
-    width: 100%;
-    background-color: #2ddf5c;
-    padding: 8px 16px;
-}
-
-/* direct div to the main header */
-.main-header > div{
-    display: inline-block;
-    vertical-align: middle;
-} 
-
-.main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
-
-}
-
-.main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 74px);
-    vertical-align: middle;
-
-}
-
-.main-nav__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main-nav__item {
-    display: inline-block;
-    margin: 0px 16px;
-}
-
-.main-nav-item__links {
-    text-decoration: none;
-    color: #0e4f1f;
-    font-weight: bold;
-    padding: 3px 0;
-}
-
-.main-nav-item__links:hover, .main-nav-item__links:active {
-    color: white;
-    border-bottom: 5px solid white;
-}
-
-.main-nav-item__links--cta {
-    color: white;
-    background-color: #ff1b68;
-    padding: 8px 16px;
-    border-radius: 8px;
-}
-
-.main-nav-item__links--cta:hover,
-.main-nav-item__links--cta:active {
-    color: #ff1b68;
-    background-color: white;
-    border: None;
-}

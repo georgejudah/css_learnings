@@ -1,0 +1,37 @@
+.section__plans {
+    padding: 12px;
+    background: #ECFFE6;
+    margin: 10px;
+    border: 2px solid black ;
+}
+
+/* .plans {
+    text-decoration: none;
+} */
+
+.plans h1 {
+    color: black;
+}
+
+.plans h2 {
+    color: grey;
+}
+
+.plans p {
+    color: black;
+    /* margin: 15px; */
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+}
+
+.section-premium__plans {
+    background: #0e4f1f;
+}
+
+
+.plans, .premium-plans {
+    color: white;
+    text-decoration: none;
+
+}
